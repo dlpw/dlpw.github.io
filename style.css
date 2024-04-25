@@ -164,15 +164,21 @@ nav a {
     font-size: calc(20px + 4vw);
 }
 
+#contact .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #contact button {
     background-color: #435fff;
     border: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 15vw;
-    width: calc(75px + 50vw);
-    
+    padding: 10px 20px;
+    color: white;
+    line-height: 15vw;
+    font-weight: 600;
+    font-size: calc(20px + 4vw);
+    margin: 20px;
 }
 
 /* TEXT BUBBLES */
@@ -196,12 +202,9 @@ nav a {
 }
 
 #text li {
-    position: relative;
+    display: flex;
+    justify-content: center;
     list-style: none;
-}
-
-.liSend {
-    left: calc(150px);
 }
 
 #text p {
@@ -224,7 +227,8 @@ nav a {
 .send {
     color: var(--send-color);
     background-color: var(--send-bg);
-
+    position: relative;
+    left: 10px;
     &:before {
         right: -7px;
         width: 20px;
@@ -243,7 +247,8 @@ nav a {
 .receive {
     background-color: var(--receive-bg);
     color: black;
-
+    position: relative;
+    right: 10px;
     &:before {
         left: -7px;
         width: 20px;
@@ -292,22 +297,22 @@ nav a {
     text-align: center;
     font-weight: 800;
     line-height: 1em;
-    font-size: 6vw;
+    font-size: calc(10px + 8vw);
+    position: relative;
+    top: calc(80px + 5vw);
 }
 
 #location #wr {
     color: #435fff;
-    font-size: 10vw;
+    font-size: calc(20px + 8vw);
     z-index: 0;
+    position: relative;
+    top: calc(80px + 5vw);
     
 }
 
-#location .image {
-    background-image: url(images/combined.png);
-    background-size: cover;
-    background-position: 0 -200px;
+#location img {
     width: 100%;
-    height: 300px;
     position: relative;
     z-index: 2;
 }
@@ -328,7 +333,7 @@ nav a {
 
 footer {
     display: flex;
-    margin-top: 5vh;
+    
     padding-top: 2vh;
     z-index: 10;
     background-color: rgb(245, 245, 245);
